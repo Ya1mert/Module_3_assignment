@@ -1,0 +1,18 @@
+<div class="container col-sm-12">
+  <table class='table table-striped'>
+    <thead>
+      <tr>
+        <th>Short Name</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>I don't want this button</th>
+      </tr>
+    </thead>
+    <tr ng-repeat='item in list.found'>
+      <td>{{item.short_name}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.description}}</td>
+      <td><button class="btn btn-warning" ng-click='onRemove({index: $index})'>IDWT</button></td>
+    </tr>
+  </table>
+</div>
